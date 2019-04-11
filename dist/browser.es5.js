@@ -102,7 +102,7 @@ var plugin = (function (renderFn) {
             apolloState = document.getElementById('__APOLLO_STATE__');
 
             if (apolloState) {
-              initialState = JSON.parse(unescape(apolloState.textContent));
+              initialState = JSON.parse(fusionCore.unescape(apolloState.textContent));
             }
           } // Create the client and apollo provider
 

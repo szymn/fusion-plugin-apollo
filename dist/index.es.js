@@ -108,9 +108,10 @@ var plugin = (renderFn => createPlugin({
         // Serialize state into html on server side render
         const initialState = client.cache && client.cache.extract();
         const serialized = JSON.stringify(initialState);
+        console.log(serialized);
         const script = html`
             <script type="application/json" id="__APOLLO_STATE__">
-              ${String(serialized)}
+              ${serialized}
             </script>
           `;
         ctx.template.body.push(script);

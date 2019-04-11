@@ -1,6 +1,6 @@
 import { getDataFromTree, ApolloProvider } from 'react-apollo';
 import React from 'react';
-import { createToken, createPlugin } from 'fusion-core';
+import { createToken, createPlugin, unescape } from 'fusion-core';
 import { FetchToken } from 'fusion-tokens';
 import { ApolloClient } from 'apollo-client';
 import { HttpLink } from 'apollo-link-http';
